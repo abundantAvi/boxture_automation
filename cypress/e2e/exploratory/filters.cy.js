@@ -301,7 +301,7 @@ describe("Validation of filters in Order Overview", () => {
     //   cy.contains('[title*="index.orders"]', "Orders").click();
     // }
   });
-  it.only("Business Model Filter", () => {
+  it("Business Model Filter", () => {
     cy.visit("/orders");
 
     cy.get('[data-action="click->satis-menu#show mouseleave->satis-menu#hide"]')
@@ -375,7 +375,7 @@ describe("Validation of filters in Order Overview", () => {
 
     // }
   });
-  it.only("Ship At Filter", () => {
+  it("Ship At Filter", () => {
     cy.visit("/orders");
 
     cy.get('[data-action="click->satis-menu#show mouseleave->satis-menu#hide"]')
@@ -445,7 +445,7 @@ describe("Validation of filters in Order Overview", () => {
       .should("not.be.empty");
     // }
   });
-  it.only("Customer Reference Number Filter", () => {
+  it("Customer Reference Number Filter", () => {
     cy.visit("/orders");
 
     cy.get('[data-action="click->satis-menu#show mouseleave->satis-menu#hide"]')
