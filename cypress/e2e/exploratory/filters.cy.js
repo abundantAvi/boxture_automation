@@ -462,7 +462,9 @@ describe("Validation of filters in Order Overview", () => {
       }
     });
 
-    cy.get('[data-column="customer_reference_number"] [data-icon="ellipsis"] ')
+    cy.get('[data-column="customer_reference_number"] [data-icon="ellipsis"]', {
+      timeout: 3000,
+    })
 
       .should("be.visible")
       .click();
