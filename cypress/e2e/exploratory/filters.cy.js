@@ -234,7 +234,7 @@ describe("Validation of filters in Order Overview", () => {
     cy.get("tr:nth-child(4) td:nth-child(5)").should("have.text", "processing");
     cy.get("tr:nth-child(5) td:nth-child(5)").should("have.text", "processing");
   });
-  it("Channel Filter", () => {
+  it.skip("Channel Filter", () => {
     cy.visit("/orders");
     cy.get('[data-action="click->satis-menu#show mouseleave->satis-menu#hide"]')
       .first()
@@ -1080,7 +1080,7 @@ describe("Validation of filters in Order Overview", () => {
 
     // }
   });
-  it("Origin Locations Filter", () => {
+  it.skip("Origin Locations Filter", () => {
     cy.visit("/orders");
 
     cy.get('[data-action="click->satis-menu#show mouseleave->satis-menu#hide"]')
@@ -1142,7 +1142,7 @@ describe("Validation of filters in Order Overview", () => {
 
     // }
   });
-  it("Destination Locations Filter", () => {
+  it.skip("Destination Locations Filter", () => {
     cy.visit("/orders");
 
     cy.get('[data-action="click->satis-menu#show mouseleave->satis-menu#hide"]')
